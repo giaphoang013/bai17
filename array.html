@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let tong = 0;
+        // numbers.forEach(function(item, index, array){
+        //     console.log(item, index, array);
+        //     tong += item;
+        // })
+        // console.log(tong);
+
+
+
+        const monHoc = [{
+            ten: "Toan",
+            diem: 8.6
+        },
+        {
+            ten: "Ly",
+            diem: 9.6
+        },
+        {
+            ten: "Van",
+            diem: 9.6
+        },
+        {
+            ten: "Tin",
+            diem: 8.6
+        },
+        ]
+
+        const hocsinhGioi = monHoc.every(function(item, index, array){
+            return item.diem >=8;
+        })
+        console.log(hocsinhGioi);
+        if (hocsinhGioi == true) {
+            console.log("hoc sinh gioi");
+        } else {
+            console.log("Khong phai");
+        }
+    </script>
+</body>
+</html>
